@@ -11,3 +11,15 @@ body{
 *,*::before,*::after{
 	box-sizing: border-box;
 }
+
+/* A div project container will have 4 divs.projects display flex
+each .projects flexbasis 25% flexgrow 1 and an ::after and cursor pointer
+::after background-image scale(1.1) and apacity layer on hover scale(1) and opacity of filter 1
+project-details translatex(-100%)  on image loaded translateX(0)
+on click on any project add class expand
+.expand flexbasis 100% width 100vw backround-position fixed
+a cross vsibility hidden  on .expand visibility visible
+project-descripton visible on .expand
+on click on cross remove class expand
+on mobile flex-direction column */
+
