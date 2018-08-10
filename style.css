@@ -2,7 +2,8 @@
 
 :root{
 	--bodyfont:'Lato', sans-serif;
-	--blend : screen;
+	--blend : multiply;
+	--bgcolor :#555b6d;
 }
 
 body{
@@ -42,38 +43,77 @@ background-blend-mode:*/
 	flex-wrap: nowrap;
 }
 .project{
+	width: 25vw;
+	cursor: pointer;
 	flex-basis: 25%;
 	flex-grow: 1;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 0% 2.5%;
+	overflow: hidden;
 }
-.project:nth-child(1){
-	background: yellow;
-	background: url('img/party.jpg');
+.project::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: scale(1.1);
+}
+.project:hover::after{
+	transform: scale(1);
+}
+.project1::after{
+	background-color:var(--bgcolor);
+	background-image: url('img/party.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0% 50%;
+	background-blend-mode: var(--blend);
 }
-.project:nth-child(4){
-	background: green;
-	background: url('img/forest.jpg');
+.project2::after{
+	background-color:var(--bgcolor);
+	background-image: url('img/bridge2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
+	background-blend-mode: var(--blend);
 }
-.project:nth-child(3){
-	background: blueviolet;
-	background: url('img/beer.jpg');
+.project3::after{
+	background-color: var(--bgcolor);
+	background-image: url('img/beer.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
+	background-blend-mode: var(--blend);
 }
-.project:nth-child(2){
-	background: brown;
-	background: url('img/bridge2.jpg');
+.project4::after{
+	background-color:var(--bgcolor);
+	background-image: url('img/forest.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
+	background-blend-mode: var(--blend);
 }
+.projIntro{
+	color: white;
+	z-index: 2;
+	text-align: center;
+}
+.projBody{
+	display: none;
+}
+.projTitle{
+	font-size: 2rem;
+    font-weight: 800;
+}
+.projDescription{
+	font-size: 1.1rem;
+}
+
+
+
 
 
 
