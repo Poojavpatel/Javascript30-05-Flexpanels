@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+:root{
+	--bodyfont:'Lato', sans-serif;
+	--blend : screen;
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	line-height: 1.5;
     font-family: sans-serif;
-    font-family: 'Lato', sans-serif;
+    font-family:var(--bodyfont) ;
 }
 *,*::before,*::after{
 	box-sizing: border-box;
@@ -21,5 +26,59 @@ on click on any project add class expand
 a cross vsibility hidden  on .expand visibility visible
 project-descripton visible on .expand
 on click on cross remove class expand
-on mobile flex-direction column */
+on mobile flex-direction column 
+background-blend-mode:*/
+
+.fullcontainer{
+	width: 100vw;
+	height: auto;
+}
+.projContainer{
+	width: 100vw;
+	height: 100vh;
+	background: pink;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.project{
+	flex-basis: 25%;
+	flex-grow: 1;
+	
+}
+.project:nth-child(1){
+	background: yellow;
+	background: url('img/party.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 50%;
+}
+.project:nth-child(4){
+	background: green;
+	background: url('img/forest.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.project:nth-child(3){
+	background: blueviolet;
+	background: url('img/beer.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.project:nth-child(2){
+	background: brown;
+	background: url('img/bridge2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+
+
+
+
+
+
 
