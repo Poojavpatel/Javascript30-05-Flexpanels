@@ -60,6 +60,7 @@ background-blend-mode:*/
 	height: 100%;
 	position: absolute;
 	transform: scale(1.1);
+	transition: transform 0.8s;
 }
 .project:hover::after{
 	transform: scale(1);
@@ -100,6 +101,11 @@ background-blend-mode:*/
 	color: white;
 	z-index: 2;
 	text-align: center;
+	transform: translateX(-110%);
+	transition: transform 0.5s;
+}
+.projIntro:hover{
+	transform: translateX(0%);
 }
 .projBody{
 	display: none;
@@ -110,6 +116,15 @@ background-blend-mode:*/
 }
 .projDescription{
 	font-size: 1.1rem;
+}
+.expand{
+	width: 100vw;
+}
+.shrink{
+	width: 0;
+    flex-grow: 0;
+    flex-basis: 0;
+    padding: 0;
 }
 
 
