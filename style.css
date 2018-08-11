@@ -117,12 +117,12 @@ background-blend-mode:*/
 .projDescription{
 	font-size: 1.1rem;
 }
-.expand{
+.project.expand{
 	width: 100vw;
 	flex-grow: 1;
     flex-basis: 100%;
 }
-.shrink{
+.project.shrink{
 	width: 0;
     flex-grow: 0;
     flex-basis: 0;
