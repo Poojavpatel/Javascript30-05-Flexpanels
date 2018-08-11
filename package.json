@@ -16,7 +16,12 @@
     "url": "https://github.com/Poojavpatel/Javascript30-05-Flexpanels/issues"
   },
   "homepage": "https://github.com/Poojavpatel/Javascript30-05-Flexpanels#readme",
-  "devDependencies": {},
-  "dependencies": {
-  }
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-uglify": "^3.0.1",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {}
 }
