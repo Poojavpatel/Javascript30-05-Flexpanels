@@ -11,9 +11,12 @@ function itsLoaded() {
 function projSelected(event) {
     console.log(this);
     this.classList.add('expand');
+
     const notprojs = document.querySelectorAll('.project:not(.expand)');
     console.log(notprojs);
     notprojs.forEach((notproj) => {notproj.classList.add('shrink');});
+
+    document.querySelector('.close').style.display = "initial";
 }
 
 window.addEventListener('load',itsLoaded);

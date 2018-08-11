@@ -33,6 +33,7 @@ background-blend-mode:*/
 .fullcontainer{
 	width: 100vw;
 	height: auto;
+	position: relative;
 }
 .projContainer{
 	width: 100vw;
@@ -53,6 +54,7 @@ background-blend-mode:*/
 	position: relative;
 	padding: 0% 2.5%;
 	overflow: hidden;
+	transition: all 0.8s;
 }
 .project::after{
 	content: '';
@@ -120,13 +122,24 @@ background-blend-mode:*/
 .project.expand{
 	width: 100vw;
 	flex-grow: 1;
-    flex-basis: 100%;
+	flex-basis: 100%;
 }
 .project.shrink{
 	width: 0;
     flex-grow: 0;
     flex-basis: 0;
     padding: 0;
+}
+
+/***************close icon***********/
+.close{
+	display: none;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	width: 5vh;
+	height: 5vh;
+	z-index: 3;
 }
 
 
