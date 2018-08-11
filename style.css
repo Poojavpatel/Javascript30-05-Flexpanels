@@ -181,7 +181,28 @@ background-blend-mode:*/
 .addscroll{
 	overflow-y: auto;
 }
-
+/**************** media queries ************/
+@media screen and (max-width: 550px){
+	.projContainer{
+		flex-direction: column;
+	}
+	.project{
+		width: 100vw;
+	}
+}
+@media screen and (max-width: 415px){
+	.projTitle{
+		font-size: 1.4rem;
+	}
+	.projDescription{
+		font-size: 0.75rem;
+	}	
+	.projBody{
+		padding: 16% 11%;
+		font-size: 1rem;
+		line-height: 1.7;
+	}
+}
 
 
 
