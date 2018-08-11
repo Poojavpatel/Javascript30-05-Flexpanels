@@ -8,14 +8,14 @@ console.log(projectDivs);
 /******** Preloader related *******/
 
 function itsLoaded() {
+    introDivs.forEach( (introDiv) => {
+        introDiv.classList.add('itsloaded');
+    });
+}
+function itsallloaded() {
     preloaderScreen.classList.add('loadercomplete');
-    preloaderScreen.style.display = "none";
     fullContainer.classList.remove('hideme');
-    setTimeout(function(){ 
-        introDivs.forEach( (introDiv) => {
-            introDiv.classList.add('itsloaded');
-        });
-    },800);
+    preloaderScreen.style.display = "none";
 }
 
 function projSelected(event) {
@@ -55,6 +55,7 @@ function projScrolled(event) {
     }
 }
 
+window.addEventListener('load',itsallloaded);
 window.addEventListener('load',itsLoaded);
 
 projectDivs.forEach( (projectDiv) => {

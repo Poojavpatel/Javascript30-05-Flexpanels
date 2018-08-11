@@ -253,6 +253,10 @@ background-blend-mode:*/
 	.project{
 		width: 100vw;
 	}
+	.projIntro{
+		transform: translateX(-145%);
+		transition: transform 0.8s;
+	}
 }
 @media screen and (max-width: 415px){
 	.projTitle{
