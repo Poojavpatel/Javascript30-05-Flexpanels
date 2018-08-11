@@ -38,7 +38,6 @@ background-blend-mode:*/
 .projContainer{
 	width: 100vw;
 	height: 100vh;
-	background: pink;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -67,6 +66,9 @@ background-blend-mode:*/
 }
 .project:hover::after{
 	transform: scale(1);
+}
+.expand:hover::after{
+	transform: scale(1.1);
 }
 .project1::after{
 	background-color:var(--bgcolor);
@@ -112,6 +114,11 @@ background-blend-mode:*/
 }
 .projBody{
 	display: none;
+	padding: 12% 15%;
+    color: #4e4e4e;
+	text-align: left;
+	font-size: 1.1rem;
+    line-height: 1.8;
 }
 .projTitle{
 	font-size: 2rem;
