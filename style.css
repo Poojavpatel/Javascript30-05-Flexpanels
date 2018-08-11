@@ -183,7 +183,7 @@ background-blend-mode:*/
 }
 /************* Preloader ***************/
 .hideme{
-	display: none;
+	visibility: hidden;
 }
 .preloaderscreen{
 	position: fixed;
