@@ -1,13 +1,23 @@
 /*jshint esversion: 6 */
 const introDivs = document.querySelectorAll('.projIntro');
 const projectDivs = document.querySelectorAll('.project');
+const preloaderScreen = document.querySelector('.preloaderscreen');
+const fullContainer = document.querySelector('.fullcontainer');
 console.log(projectDivs);
 
+/******** Preloader related *******/
+
 function itsLoaded() {
-    introDivs.forEach( (introDiv) => {
-        introDiv.classList.add('itsloaded');
-    });
+    preloaderScreen.classList.add('loadercomplete');
+    preloaderScreen.style.display = "none";
+    fullContainer.classList.remove('hideme');
+    setTimeout(function(){ 
+        introDivs.forEach( (introDiv) => {
+            introDiv.classList.add('itsloaded');
+        });
+    },800);
 }
+
 function projSelected(event) {
     // Expand selected project
     console.log(this);
@@ -46,6 +56,7 @@ function projScrolled(event) {
 }
 
 window.addEventListener('load',itsLoaded);
+
 projectDivs.forEach( (projectDiv) => {
     projectDiv.addEventListener('click',projSelected);
 });
