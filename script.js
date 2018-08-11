@@ -18,12 +18,6 @@ function projSelected(event) {
     console.log(notprojs);
     notprojs.forEach((notproj) => {notproj.classList.add('shrink');});
 
-    //show close icon
-    document.querySelector('.close').style.display = "initial";
-
-    //show scroll icon and hidewhen scrolled up
-    document.querySelector('.scroll').style.display = "initial";
-
     //show description
     projdata = this.children[1];
     console.log(projdata);
@@ -33,7 +27,13 @@ function projSelected(event) {
     // setTimeout(function(){ alert("Hello"); }, 1000);
     setTimeout(function(){ 
         event.target.classList.add('addscroll'); 
-    }, 880);
+
+        //show close icon
+        document.querySelector('.close').style.display = "initial";
+
+        //show scroll icon and hidewhen scrolled up
+        document.querySelector('.scroll').style.display = "initial";
+    }, 900);
 }
 
 function projScrolled(event) {
