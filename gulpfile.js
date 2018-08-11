@@ -5,7 +5,7 @@ var htmlmin = require('gulp-htmlmin');
 var runSequence = require('run-sequence');
 // var uglify = require('gulp-uglify');
 const minify = require('gulp-minify');
-const imagemin = require('gulp-imagemin');
+var smushit = require('gulp-smushit');
 
 gulp.task('sayhello', function() {
     console.log('Hello');
@@ -43,11 +43,11 @@ gulp.task('minifyhtml', function() {
   });
 
 //Optimizing images
-gulp.task('minifyimg', () =>
-    gulp.src('./img/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('build/img'))
-);
+gulp.task('minifyimg', function () {
+    return gulp.src('./img/*.{jpg,png}')
+        .pipe(smushit())
+        .pipe(gulp.dest('./build/img'));
+});
 
 // Gulp task to minify all files
 gulp.task('rockit', function () {
