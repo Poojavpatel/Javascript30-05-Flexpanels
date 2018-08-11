@@ -21,6 +21,9 @@ function projSelected(event) {
     //show close icon
     document.querySelector('.close').style.display = "initial";
 
+    //show scroll icon and hidewhen scrolled up
+    document.querySelector('.scroll').style.display = "initial";
+
     //show description
     projdata = this.children[1];
     console.log(projdata);
@@ -30,10 +33,24 @@ function projSelected(event) {
     // setTimeout(function(){ alert("Hello"); }, 1000);
     setTimeout(function(){ 
         event.target.classList.add('addscroll'); 
-    }, 810);
+    }, 880);
+}
+
+function projScrolled(event) {
+    console.log(this.scrollTop);
+    if (this.scrollTop > 50) {
+        document.querySelector('.scroll').style.display = "none";
+    }else{
+        document.querySelector('.scroll').style.display = "initial";
+    }
 }
 
 window.addEventListener('load',itsLoaded);
 projectDivs.forEach( (projectDiv) => {
     projectDiv.addEventListener('click',projSelected);
 });
+
+projectDivs.forEach( (projectDiv) => {
+    projectDiv.addEventListener('scroll',projScrolled);
+});
+
