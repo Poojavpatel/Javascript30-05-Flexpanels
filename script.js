@@ -33,7 +33,7 @@ function projSelected(event) {
 
         //show scroll icon and hidewhen scrolled up
         document.querySelector('.scroll').style.display = "initial";
-    }, 900);
+    },1500);
 }
 
 function projScrolled(event) {

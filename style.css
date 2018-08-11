@@ -34,6 +34,7 @@ background-blend-mode:*/
 	width: 100vw;
 	height: auto;
 	position: relative;
+	background: black;
 }
 .projContainer{
 	width: 100vw;
@@ -115,7 +116,7 @@ background-blend-mode:*/
 .projBody{
 	display: none;
 	padding: 12% 15%;
-    color: #4e4e4e;
+    color: #545454;
 	text-align: left;
 	font-size: 1.1rem;
     line-height: 1.8;
@@ -152,6 +153,7 @@ background-blend-mode:*/
 	background:url(img/cross.png);
 	background-size: cover;
 	background-position: 50% 50%;
+	transition: all 0.8s;
 }
 .scroll{
 	display: none;
@@ -165,6 +167,7 @@ background-blend-mode:*/
 	background:url(img/scroll2.png);
 	background-size: cover;
 	background-position: 50% 50%;
+	transition: all 0.8s;
 }
 /*********/
 .showme{
