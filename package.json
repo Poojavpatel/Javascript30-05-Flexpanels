@@ -1,0 +1,22 @@
+{
+  "name": "javascript30-05-flexpanels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poojavpatel/Javascript30-05-Flexpanels.git"
+  },
+  "author": "Pooja patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Poojavpatel/Javascript30-05-Flexpanels/issues"
+  },
+  "homepage": "https://github.com/Poojavpatel/Javascript30-05-Flexpanels#readme",
+  "devDependencies": {},
+  "dependencies": {
+  }
+}
