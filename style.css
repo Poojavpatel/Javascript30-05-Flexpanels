@@ -135,11 +135,14 @@ background-blend-mode:*/
 .close{
 	display: none;
 	position: absolute;
-	top: 5%;
-	right: 5%;
-	width: 5vh;
-	height: 5vh;
+	top: 6%;
+	right: 3.5%;
+	width: 7vh;
+	height: 7vh;
 	z-index: 3;
+	background:url(img/cross.png);
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 
