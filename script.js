@@ -9,14 +9,28 @@ function itsLoaded() {
     });
 }
 function projSelected(event) {
+    // Expand selected project
     console.log(this);
     this.classList.add('expand');
 
+    //collapse rest projects
     const notprojs = document.querySelectorAll('.project:not(.expand)');
     console.log(notprojs);
     notprojs.forEach((notproj) => {notproj.classList.add('shrink');});
 
+    //show close icon
     document.querySelector('.close').style.display = "initial";
+
+    //show description
+    projdata = this.children[1];
+    console.log(projdata);
+    projdata.classList.add('showme');
+    
+    //add scrollbar after 1s
+    // setTimeout(function(){ alert("Hello"); }, 1000);
+    setTimeout(function(){ 
+        event.target.classList.add('addscroll'); 
+    }, 810);
 }
 
 window.addEventListener('load',itsLoaded);
