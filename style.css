@@ -73,7 +73,7 @@ background-blend-mode:*/
 }
 .project1::after{
 	background-color:var(--bgcolor);
-	background-image: url('img/party.jpg');
+	background-image: url('img/party_biglaptop.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0% 50%;
@@ -81,7 +81,7 @@ background-blend-mode:*/
 }
 .project2::after{
 	background-color:var(--bgcolor);
-	background-image: url('img/bridge2.jpg');
+	background-image: url('img/bridge2_biglaptop.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -89,7 +89,7 @@ background-blend-mode:*/
 }
 .project3::after{
 	background-color: var(--bgcolor);
-	background-image: url('img/beer.jpg');
+	background-image: url('img/beer_biglaptop.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -97,7 +97,7 @@ background-blend-mode:*/
 }
 .project4::after{
 	background-color:var(--bgcolor);
-	background-image: url('img/forest.jpg');
+	background-image: url('img/forest_biglaptop.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -246,7 +246,158 @@ background-blend-mode:*/
 }
  }
 /**************** media queries ************/
-@media screen and (max-width: 550px){
+/* default for screen bigger than 1920 */
+
+/*********************** JAY LAPTOP **************************/
+
+@media screen and (max-width: 1920px){
+	/*between width of 1366 and 1920 - big laptop */
+	.project1::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/party_biglaptop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project2::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/bridge2_biglaptop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project3::after{
+		background-color: var(--bgcolor);
+		background-image: url('img/beer_biglaptop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project4::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/forest_biglaptop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+}
+
+/*********************** LAPTOPS **************************/
+
+@media screen and (max-width: 1366px) and (max-height:854){
+	/*between width 1000 and 1366 and height 768 to 854 - laptops */
+	.project1::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/party_laptop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project2::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/bridge2_laptop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project3::after{
+		background-color: var(--bgcolor);
+		background-image: url('img/beer_laptop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project4::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/forest_laptop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+}
+
+/*********************** TABLETS **************************/
+
+@media screen and (max-width: 1000px) and (max-height:1366){
+	/*between width 550 and 1000 and height 915 to 1366 - Tablets */
+	.project1::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/party_tab.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project2::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/bridge2_tab.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project3::after{
+		background-color: var(--bgcolor);
+		background-image: url('img/beer_tab.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project4::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/forest_tab.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+}
+
+/*********************** MOBILES **************************/
+
+@media screen and (max-width: 550px) and (max-height:915){
+	/*between width 415 and 550 and height 0 and 915 - Mobiles*/
+	.project1::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/party_mob.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project2::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/bridge2_mob.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project3::after{
+		background-color: var(--bgcolor);
+		background-image: url('img/beer_mob.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project4::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/forest_mob.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
 	.projContainer{
 		flex-direction: column;
 	}
@@ -258,7 +409,43 @@ background-blend-mode:*/
 		transition: transform 0.8s;
 	}
 }
+
+/*********************** SMALL MOBILES **************************/
+
 @media screen and (max-width: 415px){
+	/* between 0 and 415 - small Mobile */
+	.project1::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/party_mob.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project2::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/bridge2_mob.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project3::after{
+		background-color: var(--bgcolor);
+		background-image: url('img/beer_mob.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
+	.project4::after{
+		background-color:var(--bgcolor);
+		background-image: url('img/forest_mob.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-blend-mode: var(--blend);
+	}
 	.projTitle{
 		font-size: 1.4rem;
 	}
