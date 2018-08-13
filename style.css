@@ -250,7 +250,7 @@ background-blend-mode:*/
 
 /*********************** JAY LAPTOP **************************/
 
-@media screen and (max-width: 1920px){
+@media screen and (min-width:1366px) and (max-width: 1920px){
 	/*between width of 1366 and 1920 - big laptop */
 	.project1::after{
 		background-color:var(--bgcolor);
@@ -288,7 +288,7 @@ background-blend-mode:*/
 
 /*********************** LAPTOPS **************************/
 
-@media screen and (max-width: 1366px) and (max-height:854){
+@media screen and (min-width:1000px) and (max-width: 1366px) and (max-height:854px){
 	/*between width 1000 and 1366 and height 768 to 854 - laptops */
 	.project1::after{
 		background-color:var(--bgcolor);
@@ -326,7 +326,7 @@ background-blend-mode:*/
 
 /*********************** TABLETS **************************/
 
-@media screen and (max-width: 1000px) and (max-height:1366){
+@media screen and (min-width:550px) and (max-width: 1024px) and (max-height:1366px){
 	/*between width 550 and 1000 and height 915 to 1366 - Tablets */
 	.project1::after{
 		background-color:var(--bgcolor);
@@ -364,7 +364,7 @@ background-blend-mode:*/
 
 /*********************** MOBILES **************************/
 
-@media screen and (max-width: 550px) and (max-height:915){
+@media screen and (min-width:415px) and (max-width: 550px) and (max-height:915px){
 	/*between width 415 and 550 and height 0 and 915 - Mobiles*/
 	.project1::after{
 		background-color:var(--bgcolor);
@@ -445,6 +445,16 @@ background-blend-mode:*/
 		background-size: cover;
 		background-position: 50% 50%;
 		background-blend-mode: var(--blend);
+	}
+	.projContainer{
+		flex-direction: column;
+	}
+	.project{
+		width: 100vw;
+	}
+	.projIntro{
+		transform: translateX(-145%);
+		transition: transform 0.8s;
 	}
 	.projTitle{
 		font-size: 1.4rem;
